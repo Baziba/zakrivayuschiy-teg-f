@@ -29,7 +29,7 @@
           <span class="card__label">&lt;/HTML&gt;</span>
           <img
             src="./images/image-bordered.png"
-            alt="картинка карточки"
+            alt="Подготовка к работе"
             class="card__image"
           />
         </div>
@@ -47,6 +47,7 @@
           </div>
           <div class="card__reaction">
             <button
+              type="button"
               class="card__icon-button"
               type="button"
               aria-label="Лайкнуть карточку"
@@ -95,7 +96,7 @@
           <span class="card__label">&lt;/HTML&gt;</span>
           <img
             src="./images/image-bordered.png"
-            alt="картинка карточки"
+            alt="Я — чистый лист"
             class="card__image brightness"
           />
         </div>
@@ -114,6 +115,7 @@
           </div>
           <div class="card__reaction">
             <button
+              type="button"
               class="card__icon-button"
               type="button"
               aria-label="Лайкнуть карточку"
@@ -162,7 +164,7 @@
           <span class="card__label">&lt;CSS&gt;</span>
           <img
             src="./images/image-bordered.png"
-            alt="картинка карточки"
+            alt="А если не получится?"
             class="card__image multi"
           />
         </div>
@@ -179,6 +181,7 @@
           </div>
           <div class="card__reaction">
             <button
+              type="button"
               class="card__icon-button"
               type="button"
               aria-label="Лайкнуть карточку"
@@ -227,7 +230,7 @@
           <span class="card__label">&lt;desigions&gt;</span>
           <img
             src="./images/image-bordered.png"
-            alt="картинка карточки"
+            alt="Погоня за идеалом"
             class="card__image contrast"
           />
         </div>
@@ -246,6 +249,7 @@
           </div>
           <div class="card__reaction">
             <button
+              type="button"
               class="card__icon-button"
               type="button"
               aria-label="Лайкнуть карточку"
@@ -294,7 +298,7 @@
           <span class="card__label">care</span>
           <img
             src="./images/image-bordered.png"
-            alt="картинка карточки"
+            alt="О тех, кто рядом"
             class="card__image invert"
           />
         </div>
@@ -314,6 +318,7 @@
           </div>
           <div class="card__reaction">
             <button
+              type="button"
               class="card__icon-button"
               type="button"
               aria-label="Лайкнуть карточку"
@@ -362,7 +367,7 @@
           <span class="card__label">&lt;support&gt;</span>
           <img
             src="./images/image-bordered.png"
-            alt="картинка карточки"
+            alt="Обходные стратегии"
             class="card__image sepia"
           />
         </div>
@@ -379,6 +384,7 @@
           </div>
           <div class="card__reaction">
             <button
+              type="button"
               class="card__icon-button"
               type="button"
               aria-label="Лайкнуть карточку"
@@ -427,7 +433,7 @@
           <span class="card__label">&lt;lifes-style: none;&gt;</span>
           <img
             src="./images/image-bordered.png"
-            alt="картинка карточки"
+            alt="Когда опускаются руки"
             class="card__image blur"
           />
         </div>
@@ -446,6 +452,7 @@
           </div>
           <div class="card__reaction">
             <button
+              type="button"
               class="card__icon-button"
               type="button"
               aria-label="Лайкнуть карточку"
@@ -494,7 +501,7 @@
           <span class="card__label">&lt;experience&gt;</span>
           <img
             src="./images/image-bordered.png"
-            alt="картинка карточки"
+            alt="Сейчас я здесь"
             class="card__image hue-rotate"
           />
         </div>
@@ -515,6 +522,7 @@
           </div>
           <div class="card__reaction">
             <button
+              type="button"
               class="card__icon-button"
               type="button"
               aria-label="Лайкнуть карточку"
@@ -561,21 +569,36 @@
         <button
           class="save__button button"
           onclick="window.save.showModal()"
+          type="button"
         >
-          <svg class="save__button-icon" fill="currentColor" viewBox="0 0 42 42" aria-hidden="true">
+          <svg
+            class="save__button-icon"
+            fill="currentColor"
+            viewBox="0 0 42 42"
+            aria-hidden="true"
+          >
             <use href="./svg/floppy.svg#floppy" />
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
 
         <dialog id="save" class="dialog">
-          <svg class="dialog__icon" fill="currentColor" viewBox="0 0 42 42" width="39" height="39" aria-hidden="true">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-          <button class="dialog__button button" onclick="window['save'].close();">ок</button>
+          <form method="dialog" class="dialog__form">
+            <svg
+              class="dialog__icon"
+              fill="currentColor"
+              viewBox="0 0 42 42"
+              width="39"
+              height="39"
+              aria-hidden="true"
+            >
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+            
+            <button type="submit" class="dialog__button button"><span class="button__text">ок</span></button>
+          </form>
         </dialog>
-
       </section>
     </main>
 

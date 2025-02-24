@@ -7,6 +7,8 @@
   --accent-font-weight: 700;
   --border: 2px solid #000;
 
+  --button-font-size: 0.875rem;
+
   --header-hero-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-description-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --header-padding: clamp(7.5rem, 6.9231rem + 2.4615vw, 8rem);
@@ -17,6 +19,6 @@
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, transparent, #e7e7e7 0.01%, #1a1a1a);
 
-  --heart-contour-color: black;
+  --heart-contour-color: #000;
   --heart-fill-color: #ff0000;
 }
