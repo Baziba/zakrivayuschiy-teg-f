@@ -199,8 +199,8 @@
 
 .like-icon {
   display: block;
-  width: 39px;
-  height: 36px;
+  inline-size: 39px;
+  block-size: 36px;
   cursor: pointer;
 }
 
@@ -306,6 +306,7 @@
 
 .dialog[open] {
   padding: 30px;
+  max-inline-size: 353px;
 }
 
 .dialog[open] .dialog__form {
@@ -381,8 +382,8 @@
   }
 
   .save__button-icon {
-    width: 28px;
-    height: 28px;
+    inline-size: 28px;
+    block-size: 28px;
   }
 
   .dialog[open] {
